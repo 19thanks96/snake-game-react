@@ -186,7 +186,6 @@ class SnakeGame extends React.Component {
   tryToEatApple() {
     let snake = this.state.snake
     let apple = this.state.apple
-    console.log(this.state.name)
 
     // if the snake's head is on an apple
     if (snake[0].Xpos === apple.Xpos && snake[0].Ypos === apple.Ypos) {
@@ -227,7 +226,7 @@ class SnakeGame extends React.Component {
         })
         localStorage.setItem(
           'snakeHighScore',
-          JSON.stringify(this.state.highScore, this.state.name)
+          JSON.stringify(this.state.highScore)
         )
         newHighScore = true
       }
@@ -445,10 +444,6 @@ class SnakeGame extends React.Component {
             {this.state.score}
           </div>
         </div>
-        <input
-          value={this.state.name}
-          onChange={(event) => this.setState({ name: event.target.value })}
-        />
       </>
     )
   }
