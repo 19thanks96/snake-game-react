@@ -11,7 +11,7 @@ A simple snake game created with the [React](https://reactjs.org) JavaScript lib
 
 ## Demo
 
-A demo is available [here](https://MaelDrapier.github.io/react-simple-snake).
+A demo is available [here](demo/public/demo.gif).
 
 <br/>
 
